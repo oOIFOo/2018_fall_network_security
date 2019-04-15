@@ -1,0 +1,12 @@
+for f in *;do echo "$f";done
+
+cd proj2 && for f in flag*2;do while read -r line;do printf "%s" $line;done < $f;done;
+
+cd proj2 && 
+for f in flag*2;
+do
+	while read -r line;
+	do 
+		printf "%s" $line;
+	done < $f;
+done;
